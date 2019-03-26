@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #000;
+}
+
+#form{
+  background: url(https://k61.kn3.net/taringa/1/3/3/6/E/C/Funky_Dung/886.jpg);
+}
+
+#form .container .formulario {
+  background: white;
+  border-radius: 5px;
+}
+
+#form .table {
+  border-radius: 5px;
+}
+
+#form .table tbody {
+  background: white;
+}
+
+header .textarea {
+  min-height: 200px;
+}
+
+footer {
+  color: white;
+}
