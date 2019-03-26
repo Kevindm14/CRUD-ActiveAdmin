@@ -1,2 +1,27 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="row">
+  <div class="col-md-6 formulario p-3">    
+    <%= render 'form' %>
+  </div>
+  <div class="col-md-6 table-responsive-md">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th colspan="2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @posts.each do |post| %>
+          <tr>
+            <td><%= post.title %></td>
+            <td><%= post.description %></td>
+            <td><%= link_to 'Edit', edit_post_path(post), {class:"btn-sm btn-warning"} %></td>
+            <td><%= link_to 'Delete', post, method: :delete, class: "btn-sm btn-danger" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
